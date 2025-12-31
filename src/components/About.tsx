@@ -10,7 +10,7 @@ const About = () => {
             <div className="relative inline-block">
               <img 
                 src={profilePlaceholder}
-                alt="Lokesh K - Java Full Stack Developer"
+                alt="Lokesh Kondasani - Java Full Stack Developer"
                 className="w-64 h-64 md:w-80 md:h-80 rounded-2xl object-cover shadow-strong"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-2xl"></div>
@@ -26,39 +26,38 @@ const About = () => {
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
                 I'm Lokesh Kondasani, a results-driven Java Full Stack Developer currently working at 
-                NTT Data with expertise in designing and implementing scalable web applications 
-                using Spring Boot, React, and Microservices architecture. I specialize in both 
-                backend and frontend technologies, ensuring seamless integration and high-performance solutions.
+                NTT Data (Mercedes-Benz) as a Software Development Senior Specialist. I have expertise 
+                in designing and implementing scalable web applications using Spring Boot, React, and 
+                Microservices architecture.
               </p>
               
               <p>
-                My experience includes strong problem-solving skills with a track record of delivering 
-                robust applications that enhance user experience and system efficiency. I excel at 
-                collaborating with cross-functional teams and driving projects to successful completion, 
-                staying updated with the latest industry trends.
+                With experience spanning banking, financial, and automobile domains, I specialize in 
+                building high-performance solutions that enhance user experience and system efficiency. 
+                I excel at collaborating with cross-functional teams and driving projects to successful 
+                completion.
               </p>
               
               <p>
                 I'm passionate about optimizing system performance and creating solutions that not only 
-                meet technical requirements but also drive business growth. Whether it's building 
-                microservices architecture or developing full-stack applications, I'm committed to 
-                delivering excellence in every project.
+                meet technical requirements but also drive business growth.
               </p>
             </div>
             
-            {/* Skills Grid */}
-            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
-              {[
-                'Java', 'Spring Boot', 'React', 'TypeScript', 
-                'MySQL', 'PostgreSQL', 'Microservices', 'REST/JSON', 'Oracle'
-              ].map((skill) => (
-                <div 
-                  key={skill}
-                  className="bg-accent text-accent-foreground px-4 py-2 rounded-lg text-center font-medium shadow-soft hover:shadow-medium transition-all duration-300"
-                >
-                  {skill}
-                </div>
-              ))}
+            {/* Quick Stats */}
+            <div className="mt-8 grid grid-cols-3 gap-4">
+              <div className="text-center p-4 bg-accent rounded-xl">
+                <div className="text-2xl font-bold text-primary">4+</div>
+                <div className="text-sm text-muted-foreground">Years Exp.</div>
+              </div>
+              <div className="text-center p-4 bg-accent rounded-xl">
+                <div className="text-2xl font-bold text-primary">25+</div>
+                <div className="text-sm text-muted-foreground">Projects</div>
+              </div>
+              <div className="text-center p-4 bg-accent rounded-xl">
+                <div className="text-2xl font-bold text-primary">3</div>
+                <div className="text-sm text-muted-foreground">Domains</div>
+              </div>
             </div>
           </div>
         </div>
