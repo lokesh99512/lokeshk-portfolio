@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Download, FolderOpen } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
-
+import resumePdf from "../assets/lokesh__java__resume.pdf";
 const Hero = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -40,7 +40,7 @@ const Hero = () => {
               size="lg"
               className="bg-white text-primary hover:bg-blue-50 px-8 py-4 text-lg font-semibold shadow-medium transition-all duration-300 hover:scale-105"
             >
-              <a href="/lokesh__java__resume.pdf" download>
+              <a  href={resumePdf} download>
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>

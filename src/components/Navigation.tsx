@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import resumePdf from "../assets/lokesh__java__resume.pdf";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,7 +54,7 @@ const Navigation = () => {
           asChild
           className="hidden md:flex bg-primary hover:bg-primary-hover text-primary-foreground px-6"
         >
-          <a href="/lokesh__java__resume.pdf" download>
+          <a  href={resumePdf} download>
             Download CV
           </a>
         </Button>
@@ -84,7 +85,7 @@ const Navigation = () => {
               asChild
               className="w-full bg-primary hover:bg-primary-hover text-primary-foreground"
             >
-              <a href="/lokesh__java__resume.pdf" download>
+              <a  href={resumePdf} download>
                 Download CV
               </a>
             </Button>
