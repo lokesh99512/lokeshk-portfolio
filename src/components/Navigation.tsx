@@ -53,7 +53,7 @@ const Navigation = () => {
           asChild
           className="hidden md:flex bg-primary hover:bg-primary-hover text-primary-foreground px-6"
         >
-          <a href="/Lokesh_Kondasani_Resume.pdf" download>
+          <a href="/lokesh__java__resume.pdf" download>
             Download CV
           </a>
         </Button>
@@ -84,7 +84,7 @@ const Navigation = () => {
               asChild
               className="w-full bg-primary hover:bg-primary-hover text-primary-foreground"
             >
-              <a href="/Lokesh_Kondasani_Resume.pdf" download>
+              <a href="/lokesh__java__resume.pdf" download>
                 Download CV
               </a>
             </Button>
