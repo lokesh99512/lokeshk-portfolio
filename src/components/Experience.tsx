@@ -1,30 +1,30 @@
-import { Calendar, Building2, MapPin } from 'lucide-react';
+import { Calendar, Building2, MapPin, Briefcase } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
     {
-      company: "NTT Data",
-      position: "Java Full Stack Developer",
-      duration: "08/2024 – Present",
+      company: "NTT DATA (Mercedes-Benz)",
+      position: "Software Development Senior Specialist",
+      duration: "05/2025 – Present",
       location: "Bangalore, India",
-      description: "Working on product-based company developing Auto Mobile Field for Mercedes Benz. Collaborating with over 20 developers to design high-scalability microservices architecture.",
-      technologies: ["Java", "Spring Boot", "React", "Microservices", "Auto Mobile Field"]
+      description: "Team Lead handling end-to-end project responsibilities including requirement analysis, architecture design, and implementation. Mentoring team members and ensuring delivery quality.",
+      technologies: ["Core Java", "Spring Boot", "Spring Data JPA", "Kafka", "Spring Security", "Microservices", "MySQL", "PostgreSQL", "Oracle", "React", "Angular", "AWS", "CI/CD", "GitHub Actions"]
     },
     {
       company: "Reserve Bank Information Technology (ReBIT)",
-      position: "Java Full Stack Developer", 
-      duration: "08/2024 – Present",
+      position: "Java Full Stack Developer",
+      duration: "08/2024 – 05/2025",
       location: "Bangalore, India",
-      description: "Developing applications for the banking sector, delivering projects within tight deadlines while enhancing functionality and features.",
-      technologies: ["Java", "Spring Boot", "Banking Systems", "RBI Applications"]
+      description: "Designed high-scalability microservices architecture. Collaborated with 20+ developers in an agile environment to deliver banking applications.",
+      technologies: ["Java", "Spring Boot", "JPA", "Kafka", "Spring Security", "Microservices", "MySQL", "PostgreSQL", "React", "Angular"]
     },
     {
-      company: "BSQL Systems Private Limited",
+      company: "BSOL Systems Pvt Ltd",
       position: "Java Developer",
-      duration: "01/2022 – 05/2024", 
+      duration: "01/2022 – 05/2024",
       location: "Bangalore, India",
-      description: "Full service IT company developing shipping and rate management solutions. Developed internal Time Sheet project, handling end-to-end coding and gaining hands-on experience in real-time application development.",
-      technologies: ["Java", "Spring Boot", "Spring Data JPA", "MySQL", "PostgreSQL", "Shipping Solutions"]
+      description: "Built an internal Time Sheet application from scratch. End-to-end ownership from development to deployment, gaining hands-on experience in real-time application development.",
+      technologies: ["Java", "Spring Boot", "JPA", "Spring Security", "Microservices", "MySQL", "PostgreSQL", "React", "Angular"]
     }
   ];
 
@@ -36,7 +36,7 @@ const Experience = () => {
             Work Experience
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            My professional journey building scalable applications and delivering results
+            My professional journey building scalable applications across banking, financial, and automobile domains
           </p>
         </div>
 
@@ -57,7 +57,7 @@ const Experience = () => {
               
               {/* Content */}
               <div className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
                     <h3 className="text-2xl font-bold text-card-foreground mb-2">
                       {exp.position}
@@ -67,7 +67,7 @@ const Experience = () => {
                       {exp.company}
                     </div>
                   </div>
-                  <div className="text-right">
+                  <div className="text-left md:text-right mt-2 md:mt-0">
                     <div className="flex items-center gap-2 text-muted-foreground mb-1">
                       <Calendar className="w-4 h-4" />
                       {exp.duration}
