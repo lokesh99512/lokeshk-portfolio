@@ -1,4 +1,4 @@
-import { Linkedin, Github, Mail, Phone, MapPin } from 'lucide-react';
+import { Linkedin, Github, Mail, Phone, MapPin, Youtube, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -85,7 +85,7 @@ const Footer = () => {
             </div>
             
             {/* Social Links */}
-            <div className="flex space-x-4 mt-6">
+            <div className="flex flex-wrap gap-4 mt-6">
               <a 
                 href="https://www.linkedin.com/in/lokesh-kondasani/"
                 target="_blank"
@@ -103,6 +103,33 @@ const Footer = () => {
                 aria-label="GitHub"
               >
                 <Github size={20} />
+              </a>
+              <a 
+                href="https://www.youtube.com/@UNWAVERINGLOKi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-100 hover:text-white transition-colors"
+                aria-label="YouTube"
+              >
+                <Youtube size={20} />
+              </a>
+              <a 
+                href="https://www.instagram.com/unwaveringloki/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-100 hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                href="https://x.com/UNWAVERINGLOKi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-100 hover:text-white transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <Twitter size={20} />
               </a>
               <a 
                 href="mailto:lokeshreddy93817@gmail.com"

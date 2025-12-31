@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink, Youtube, Instagram, Twitter } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -86,6 +86,36 @@ const Contact = () => {
               >
                 <ExternalLink size={20} />
                 <span className="font-medium">Upwork</span>
+              </a>
+              
+              <a
+                href="https://www.youtube.com/@UNWAVERINGLOKi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+              >
+                <Youtube size={20} />
+                <span className="font-medium">YouTube</span>
+              </a>
+              
+              <a
+                href="https://www.instagram.com/unwaveringloki/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+              >
+                <Instagram size={20} />
+                <span className="font-medium">Instagram</span>
+              </a>
+              
+              <a
+                href="https://x.com/UNWAVERINGLOKi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+              >
+                <Twitter size={20} />
+                <span className="font-medium">X (Twitter)</span>
               </a>
             </div>
           </div>
