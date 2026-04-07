@@ -7,32 +7,28 @@ const Responsibilities = () => {
     "Worked with MySQL, PostgreSQL, and Oracle databases for data management and optimization",
     "Followed Agile/Scrum methodologies for iterative development and continuous improvement",
     "Led requirement gathering, testing, and deployment processes",
-    "Managed code versioning using Git and implemented CI/CD pipelines with GitHub Actions and Jenkins"
+    "Managed code versioning using Git and implemented CI/CD pipelines with GitHub Actions and Jenkins",
   ];
 
   return (
-    <section id="responsibilities" className="py-20 bg-gradient-subtle">
+    <section id="responsibilities" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Roles & Responsibilities
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Key contributions and expertise areas across projects
-            </p>
+            <span className="text-sm font-semibold tracking-widest uppercase text-primary mb-3 block">What I Do</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Roles & Responsibilities</h2>
           </div>
-          
-          <div className="bg-card rounded-2xl p-8 md:p-10 shadow-soft animate-slide-up">
+
+          <div className="bg-card border border-border/50 rounded-2xl p-8 md:p-10 animate-slide-up">
             <ul className="space-y-4">
               {responsibilities.map((item, index) => (
-                <li 
+                <li
                   key={index}
-                  className="flex items-start gap-4 text-lg text-muted-foreground animate-fade-in"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  className="flex items-start gap-4 text-muted-foreground animate-fade-in"
+                  style={{ animationDelay: `${index * 80}ms` }}
                 >
-                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span>{item}</span>
+                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
