@@ -2,67 +2,40 @@ import { Monitor, Server, Database, Cloud, TestTube } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
-    {
-      icon: Monitor,
-      title: 'Frontend',
-      skills: ['HTML5', 'CSS3', 'TypeScript', 'Bootstrap', 'React', 'Redux', 'Redux-Saga', 'Angular']
-    },
-    {
-      icon: Server,
-      title: 'Backend',
-      skills: ['Java', 'Spring Boot', 'Spring Data JPA', 'Microservices', 'Kafka', 'Spring Security']
-    },
-    {
-      icon: Database,
-      title: 'Databases',
-      skills: ['MySQL', 'PostgreSQL', 'Oracle']
-    },
-    {
-      icon: Cloud,
-      title: 'DevOps & Cloud',
-      skills: ['AWS (EC2, S3)', 'CI/CD', 'Jenkins', 'OpenShift', 'Docker']
-    },
-    {
-      icon: TestTube,
-      title: 'Testing & Tools',
-      skills: ['JUnit', 'Mockito', 'Postman', 'Git', 'GitHub Actions', 'JIRA']
-    }
+    { icon: Monitor, title: 'Frontend', skills: ['HTML5', 'CSS3', 'TypeScript', 'Bootstrap', 'React', 'Redux', 'Redux-Saga', 'Angular'] },
+    { icon: Server, title: 'Backend', skills: ['Java', 'Spring Boot', 'Spring Data JPA', 'Microservices', 'Kafka', 'Spring Security'] },
+    { icon: Database, title: 'Databases', skills: ['MySQL', 'PostgreSQL', 'Oracle'] },
+    { icon: Cloud, title: 'DevOps & Cloud', skills: ['AWS (EC2, S3)', 'CI/CD', 'Jenkins', 'OpenShift', 'Docker'] },
+    { icon: TestTube, title: 'Testing & Tools', skills: ['JUnit', 'Mockito', 'Postman', 'Git', 'GitHub Actions', 'JIRA'] },
   ];
 
   return (
-    <section id="skills" className="py-20 bg-background">
+    <section id="skills" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Technical Skills
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <span className="text-sm font-semibold tracking-widest uppercase text-primary mb-3 block">Expertise</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Technical Skills</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             A comprehensive toolkit for building modern, scalable applications
           </p>
         </div>
-        
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-gradient-card p-8 rounded-2xl shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-2 animate-slide-up group"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="group bg-card border border-border/50 p-7 rounded-2xl hover:border-primary/30 hover:shadow-medium transition-all duration-300 hover:-translate-y-1 animate-slide-up"
+              style={{ animationDelay: `${index * 80}ms` }}
             >
-              <div className="flex items-center mb-6">
-                <div className="bg-primary text-primary-foreground p-3 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                  <category.icon size={24} />
+              <div className="flex items-center mb-5">
+                <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                  <category.icon size={22} />
                 </div>
-                <h3 className="text-xl font-bold text-foreground ml-4">
-                  {category.title}
-                </h3>
+                <h3 className="text-lg font-bold text-foreground ml-4">{category.title}</h3>
               </div>
-              
               <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <span 
-                    key={skillIndex}
-                    className="bg-accent text-accent-foreground px-3 py-2 rounded-lg text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                  >
+                {category.skills.map((skill, i) => (
+                  <span key={i} className="bg-muted text-muted-foreground px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-primary/10 hover:text-primary transition-colors duration-200">
                     {skill}
                   </span>
                 ))}
