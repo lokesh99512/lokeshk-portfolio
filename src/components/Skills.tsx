@@ -6,7 +6,7 @@ const Skills = () => {
     { icon: Server, title: 'Backend', skills: ['Java', 'Spring Boot', 'Spring Data JPA', 'Microservices', 'Kafka', 'Spring Security', 'Python'] },
     { icon: Brain, title: 'AI / LLM', skills: ['LLMs', 'Generative AI', 'LangChain', 'Prompt Engineering', 'AI Chatbots', 'OpenAI API', 'RAG', 'Vector DBs'] },
     { icon: Database, title: 'Databases', skills: ['MySQL', 'PostgreSQL', 'Oracle'] },
-    { icon: Cloud, title: 'AWS & Cloud', skills: ['AWS Lambda', 'EC2', 'ECS', 'ECR', 'S3', 'SQS', 'CI/CD', 'Jenkins', 'OpenShift', 'Docker'] },
+    { icon: Cloud, title: 'AWS & Cloud', skills: ['AWS Lambda', 'EC2', 'ECS', 'ECR', 'S3', 'SQS', 'Kubernetes', 'Clusters', 'ArgoCD', 'Harbor', 'CI/CD', 'Jenkins', 'OpenShift', 'Docker'] },
     { icon: Network, title: 'Architecture', skills: ['System Design', 'High-Level Design (HLD)', 'Low-Level Design (LLD)', 'Microservices Architecture', 'Scalability', 'Distributed Systems'] },
     { icon: TestTube, title: 'Testing & Tools', skills: ['JUnit', 'Mockito', 'Postman', 'Git', 'GitHub Actions', 'JIRA'] },
   ];
