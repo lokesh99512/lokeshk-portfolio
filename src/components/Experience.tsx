@@ -7,8 +7,8 @@ const Experience = () => {
       position: "Software Development Senior Specialist",
       duration: "05/2025 – Present",
       location: "Bangalore, India",
-      description: "Team Lead handling end-to-end project responsibilities including requirement analysis, architecture design, and implementation. Mentoring team members and ensuring delivery quality.",
-      technologies: ["Core Java", "Spring Boot", "Spring Data JPA", "Kafka", "Spring Security", "Microservices", "MySQL", "PostgreSQL", "Oracle", "React", "Angular", "AWS", "CI/CD", "GitHub Actions"],
+      description: "Team Lead handling end-to-end project responsibilities including requirement analysis, architecture design, and implementation. Building AI-powered chatbot applications using LLMs, LangChain, and Prompt Engineering. Mentoring team members and ensuring delivery quality.",
+      technologies: ["Core Java", "Spring Boot", "Spring Data JPA", "Kafka", "Spring Security", "Microservices", "Python", "LLMs", "Generative AI", "LangChain", "Prompt Engineering", "AI Chatbot", "OpenAI API", "MySQL", "PostgreSQL", "Oracle", "React", "Angular", "AWS", "CI/CD", "GitHub Actions"],
       current: true,
     },
     {
