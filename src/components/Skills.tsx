@@ -1,9 +1,10 @@
-import { Monitor, Server, Database, Cloud, TestTube } from 'lucide-react';
+import { Monitor, Server, Database, Cloud, TestTube, Brain } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     { icon: Monitor, title: 'Frontend', skills: ['HTML5', 'CSS3', 'TypeScript', 'Bootstrap', 'React', 'Redux', 'Redux-Saga', 'Angular'] },
-    { icon: Server, title: 'Backend', skills: ['Java', 'Spring Boot', 'Spring Data JPA', 'Microservices', 'Kafka', 'Spring Security'] },
+    { icon: Server, title: 'Backend', skills: ['Java', 'Spring Boot', 'Spring Data JPA', 'Microservices', 'Kafka', 'Spring Security', 'Python'] },
+    { icon: Brain, title: 'AI / LLM', skills: ['LLMs', 'Generative AI', 'LangChain', 'Prompt Engineering', 'AI Chatbots', 'OpenAI API', 'RAG', 'Vector DBs'] },
     { icon: Database, title: 'Databases', skills: ['MySQL', 'PostgreSQL', 'Oracle'] },
     { icon: Cloud, title: 'DevOps & Cloud', skills: ['AWS (EC2, S3)', 'CI/CD', 'Jenkins', 'OpenShift', 'Docker'] },
     { icon: TestTube, title: 'Testing & Tools', skills: ['JUnit', 'Mockito', 'Postman', 'Git', 'GitHub Actions', 'JIRA'] },
