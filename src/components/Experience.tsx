@@ -7,7 +7,7 @@ const Experience = () => {
       position: "Software Development Senior Specialist",
       duration: "05/2025 – Present",
       location: "Bangalore, India",
-      description: "Team Lead handling end-to-end project responsibilities including system design, architecture, and implementation. Designing scalable distributed systems on AWS (Lambda, ECS, ECR, EC2, SQS) and building AI-powered chatbot applications using LLMs, LangChain, and Prompt Engineering. Mentoring team members and ensuring delivery quality.",
+      description: "Working on end-to-end design and development of scalable distributed systems on AWS (Lambda, ECS, ECR, EC2, SQS) using Java, Spring Boot, and Microservices. Building AI-powered chatbot applications leveraging LLMs, LangChain, and Prompt Engineering. Contributing to system design, architecture decisions, and delivery of high-quality, production-grade features.",
       technologies: ["Core Java", "Spring Boot", "Spring Data JPA", "Kafka", "Spring Security", "Microservices", "System Design", "Python", "LLMs", "Generative AI", "LangChain", "Prompt Engineering", "AI Chatbot", "OpenAI API", "MySQL", "PostgreSQL", "Oracle", "React", "Angular", "AWS Lambda", "ECS", "ECR", "EC2", "SQS", "Kubernetes", "ArgoCD", "Harbor", "Clusters", "CI/CD", "GitHub Actions"],
       current: true,
     },
