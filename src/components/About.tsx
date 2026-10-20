@@ -1,4 +1,5 @@
 import profilePlaceholder from '@/assets/profile-placeholder.jpg';
+import { getExperienceLabel } from '@/lib/experience';
 
 const About = () => {
   return (
@@ -35,7 +36,7 @@ const About = () => {
 
             <div className="mt-8 grid grid-cols-3 gap-3">
               {[
-                { value: '4+', label: 'Years Exp.' },
+                { value: getExperienceLabel(), label: 'Years Exp.' },
                 { value: '25+', label: 'Projects' },
                 { value: '3', label: 'Domains' },
               ].map((stat, i) => (

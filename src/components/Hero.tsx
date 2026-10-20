@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Download, FolderOpen, ArrowDown } from 'lucide-react';
 import resumePdf from "../assets/lokesh__java__resume.pdf";
+import { getExperienceLabel } from '@/lib/experience';
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -59,7 +60,7 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-lg mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-foreground">4+</div>
+              <div className="text-3xl md:text-4xl font-bold text-foreground">{getExperienceLabel()}</div>
               <div className="text-sm text-muted-foreground mt-1">Years Exp.</div>
             </div>
             <div className="text-center border-x border-border">
